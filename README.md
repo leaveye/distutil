@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/leaveye/distutil.png?branch=master)](https://travis-ci.org/leaveye/distutil)
 # Introduction
 
 A useful distribute package util for producing embeded devices.
