@@ -36,11 +36,13 @@ A useful distribute package util for producing embeded devices.
 
 * To get help
 
-      dist help [COMMAND]
+  `dist help [COMMAND]`
 
 * To get information
 
-      dist show [all] [config] [source] [output] [PACKAGE]
+  ```
+  dist show [all] [config] [source] [output] [PACKAGE]
+  ```
 
   * `all` is same to given all other options except `PACKAGE`.
 
