@@ -36,7 +36,9 @@ A useful distribute package util for producing embeded devices.
 
 * To get help
 
-  `dist help [COMMAND]`
+  ```
+  dist help [COMMAND]
+  ```
 
 * To get information
 
@@ -50,35 +52,47 @@ A useful distribute package util for producing embeded devices.
 
 * To set current folder to be distribution package build folder, and the package name is start with `PACKAGE`.
 
-      dist init PACKAGE
+  ```
+  dist init PACKAGE
+  ```
 
 ## Config environment
 
 * To (re)set package name to `PACKAGE`.
 
-      dist config name PACKAGE
+  ```
+  dist config name PACKAGE
+  ```
 
   * `PACKAGE` regex: `[a-zA-Z][a-zA-Z0-9_-]*`
 
 * To set/update package full discription name to `NAME`. (*TODO*)
 
-      dist config fullname NAME
+  ```
+  dist config fullname NAME
+  ```
 
   **NOTE:** NOT sure where to use this name.
 
 * To set/update package version generation rule to `RULE`.
 
-      dist config versionrule RULE
+  ```
+  dist config versionrule RULE
+  ```
 
 * To set/update a branch with name `BRANCH`.
 
-      dist branch BRANCH [-p PACKAGE] [-t TAG] [[--] STUB [...]]
+  ```
+  dist branch BRANCH [-p PACKAGE] [-t TAG] [[--] STUB [...]]
+  ```
 
   * `BRANCH`, `PACKAGE`, `TAG` and `STUB` regex: `[a-zA-Z][a-zA-Z0-9_-]*`
 
 * To set/update a source with name `STUB` and link to `URL`.
 
-      dist source STUB URL [-b BUILDMETHOD] [-c COLLECTMETHOD] [-f]
+  ```
+  dist source STUB URL [-b BUILDMETHOD] [-c COLLECTMETHOD] [-f]
+  ```
 
   * `STUB` regex: `[a-zA-Z][a-zA-Z0-9_-]*`
   * `URL` can be `svn://SERVER/.*`, `git@SERVER/.*`
@@ -87,7 +101,9 @@ A useful distribute package util for producing embeded devices.
 
 * To remove a source from envionment.
 
-      dist source STUB [-r]
+  ```
+  dist source STUB [-r]
+  ```
 
   * `STUB` regex: `[a-zA-Z][a-zA-Z0-9_-]*`
 
@@ -95,21 +111,29 @@ A useful distribute package util for producing embeded devices.
 
 * To fetch given `STUB`s or all stubs we used in package version `VERSION`.
 
-      dist fetch VERSION [STUB] [...]
+  ```
+  dist fetch VERSION [STUB] [...]
+  ```
 
 * To get the newest verison of given `STUB`s or all stubs.
 
-      dist update [STUB] [...]
+  ```
+  dist update [STUB] [...]
+  ```
 
 ## Build package
 
 * To do compile all sources.
 
-      dist build
+  ```
+  dist build
+  ```
 
 * To create package.
 
-      dist pack
+  ```
+  dist pack
+  ```
 
 ## Install package
 
@@ -128,10 +152,14 @@ Assume the downloaded package is `/tmp/PACKAGE.VERSION.tar`.
 
   0. Use that script to install the package with given sub-platform.
   
-         /tmp/PACKAGE/install.sh /tmp/PACKAGE.VERSION.tar SUBPLAT
+     ```
+     /tmp/PACKAGE/install.sh /tmp/PACKAGE.VERSION.tar SUBPLAT
+     ```
 
 * Otherwise:
 
   0. use installed `update.sh` directly.
 
-         /usr/bin/update.sh http://SERVER/PACKAGE.VERSION.tar
+     ```
+     /usr/bin/update.sh http://SERVER/PACKAGE.VERSION.tar
+     ```
