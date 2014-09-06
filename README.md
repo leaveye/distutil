@@ -18,7 +18,7 @@ A useful distribute package util for producing embeded devices.
 
 * source / stub
 
-  A source is a code tree hosted on a reachable SVC server.  
+  A source is a code tree hosted on a reachable VCS server.  
   A stub is the name mapped to a source in the package building environment.
 
 * plat
